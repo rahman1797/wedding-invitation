@@ -1,38 +1,247 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+
+/*START WAVE */
+
+  /* waves */
+  .ocean {
+    background-color: rgba(0, 0, 0, 0);
+    height: 80px; 
+    width: 100%;
+    transform: translateY(-60px);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+  }
+  
+  .wave {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23111111'/%3E%3C/svg%3E");
+    position: absolute;
+    background-repeat: repeat-x;
+    width: 200%;
+    height: 100%;
+    animation: wave 8s ease-in-out reverse infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    bottom: 0;
+    height: 80%;
+    animation: wave 13s ease-in-out infinite;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23222222'/%3E%3C/svg%3E");
+  }
+  
+  .wave:nth-of-type(3) {
+    bottom: 0;
+    height: 70%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23333333'/%3E%3C/svg%3E");
+    animation: wave 15s ease-in-out reverse infinite;
+  }
+  .wave:nth-of-type(4) {
+    bottom: 0;
+    height: 30%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    animation: wave 10s ease-in-out infinite;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .wave {
+        animation: wave 15s ease-in-out reverse infinite;
+      }
+      
+      .wave:nth-of-type(2) {
+        animation: wave 20s ease-in-out infinite;
+    }
+      
+      .wave:nth-of-type(3) {
+        animation: wave 24s ease-in-out reverse infinite;
+      }
+      .wave:nth-of-type(4) {
+        animation: wave 18s ease-in-out infinite;
+      }
+  }
+  
+  @keyframes wave {
+      0% {transform: translateX(0%);}
+      50% {transform: translateX(-50%);}
+      100% {transform: translateX(0%);}
+  }
+/* END WAVE */
+
+.countdown {
   text-align: center;
+  line-height: 20px;
+  background-image: url('/src/assets/images/pink-texture-background.jpg');
+  background-size: cover;
+  color: black;
+  font-weight: 600;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(134, 134, 134);
+  width: 70px;
+  height: 70px;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ourstory-banner {
+  background-image: url('/src/assets/images/white-wall-border1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ig-icon {
+  width: 40px;
+  height: 40px;
+}
+
+p.desc {
+  min-height: 60px;
+  margin-bottom: 0;
+}
+
+h1.playball {
+    font-family: Playball, cursive !important;
+    font-size: calc(5vw + 23px);
+}
+h2.playball {
+    font-family: Playball, cursive !important;
+    font-size: calc(5vw + 23px);
+}
+
+h3.playball {
+  font-family: Playball, cursive !important;
+  font-size: calc(2vw + 18px);
+}
+
+h3.bried-groom {
+  margin: 0 0 5px 0;
+}
+
+.fh5co-cover .display-tc .btn {
+  font-size: 16px;
+  font-family: "Arima Madurai", cursive;
+}
+
+.fh5co-heading {
+  margin-bottom: 3em;
+}
+
+.blur-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    color: white;
+    inline-size: max-content;
+}
+
+.madurai{
+    font-family: "Arima Madurai", cursive;
+    text-align: center;
+    margin: auto;
+}
+
+.playball{
+    font-family: Playball, cursive;
+    text-align: center;
+    font-size: calc(5vw + 25px);
+}
+.heading-white-background {
+    text-shadow: rgb(197, 197, 197) 2px 2px 10px;
+    color: #F14E95;
+}
+.heading-color-background {
+    color: rgb(255, 255, 255);
+}
+
+.blur-background .greeting{
+    font-family: "Arima Madurai", cursive;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blur-background.greeting{
+    max-width: 350px;
+  }
+  p.desc {
+    min-height: 0px;
+    margin-bottom: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p.story-desc {
+  letter-spacing: -1px;
 }
 
-.App-link {
-  color: #61dafb;
+.frame {
+    width: calc(30vw + 150px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.frame.event {
+    filter: invert();
+}
+
+.heart i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.covid-img {
+  width: 90px;
+  height: 90px;
+}
+
+.covid-desc {
+  line-height: 18px;
+}
+
+.covid-banner, .countdown-banner {
+  background-image: url('./assets/images/background1.png');
+  background-size: 100% 100%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+.covid-banner::before {
+  content: '';
+  width: 200%;
+  height: 50px;
+  position: absolute;
+  bottom: -10%;
+  left: -50%;
+  background-color: white;
+}
+
+.countdown-banner::before {
+  content: '';
+  width: 200%;
+  height: 50px;
+  position: absolute;
+  bottom: -10%;
+  left: -50%;
+  background-color: white;
+}
+
+.h3-covid {
+  font-size: 4em !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .covid-banner::before {
+    height: 80px;
   }
-  to {
-    transform: rotate(360deg);
+  .countdown-banner::before {
+    height: 80px;
+  }
+  .covid-desc {
+    font-size: 15px;
+  }
+  .h3-covid {
+    font-size: 2em !important;
   }
 }

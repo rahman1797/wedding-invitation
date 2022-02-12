@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+
+//Library
+import { Routes, Route, Link } from "react-router-dom";
+
+//Page
+import OpenInvitation from './page/OpenInvitation';
+import Main from './page/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="fh5co-loader"></div>
+      <Routes>
+        <Route path="/:name" element={<OpenInvitation />} />
+        <Route path="/:name/opened" exact element={<Main />} />
+      </Routes>
+    </>
+  )
 }
 
 export default App;
