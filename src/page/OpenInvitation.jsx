@@ -3,6 +3,7 @@ import './style/OpenInvitation.css';
 
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+// import { Helmet } from 'react-helmet';
 
 function OpenInvitation() {
 
@@ -41,6 +42,9 @@ function OpenInvitation() {
                     </div>
                 </div>
             </div>
+            {/* <Helmet>
+                <script src="assets/js/main.js"></script>
+            </Helmet> */}
         </header>
         // <header id="fh5co-header" className="fh5co-cover" role="banner" data-stellar-background-ratio="1">
         // 	<div className="overlay"></div>

@@ -18,7 +18,6 @@ export default class Header extends Component {
 									<h1 className='playball'>Evita & Rahman</h1>
 									<h2>We're getting marriage</h2>
 									<div className="simply-countdown simply-countdown-one"></div>
-									<p><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDE1ZXFubWkxM28zOGM5bm9raG00dWk5YW4gbWF1bGFuYXJhaG1hbm51cjY3QG0&amp;tmsrc=maulanarahmannur67%40gmail.com" className="btn btn-default btn-sm">Save The Date</a></p>
 									<div className='col-12 mt-3 greeting blur-background mx-auto'>
 										<i>Kepada Yth <br />
 										Bapak/Ibu/Saudara/i <br />

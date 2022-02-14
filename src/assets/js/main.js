@@ -1,9 +1,8 @@
-;(function () {
+(function () {
 	
 	'use strict';
-
+	
 	var mobileMenuOutsideClick = function() {
-
 		$(document).click(function (e) {
 	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -20,7 +19,6 @@
 
 
 	var offcanvasMenu = function() {
-
 		$('#page').prepend('<div id="fh5co-offcanvas" />');
 		$('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
@@ -64,7 +62,6 @@
 
 
 	var burgerMenu = function() {
-
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 			var $this = $(this);
 
@@ -120,7 +117,6 @@
 
 
 	var dropdown = function() {
-
 		$('.has-dropdown').mouseenter(function(){
 
 			var $this = $(this);
@@ -157,7 +153,6 @@
 
 
 	var goToTop = function() {
-
 		$('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
@@ -213,8 +208,35 @@
 		$(window).stellar();
 	};
 
+	var carouselBriedsmaid = function() {
+		$(document).ready(function () {
+			var silder = $(".owl-carousel");
+			silder.owlCarousel({
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: false,
+				items: 1,
+				stagePadding: 20,
+				center: true,
+				nav: false,
+				margin: 30,
+				dots: true,
+				loop: true,
+				responsive: {
+					0: { items: 2 },
+					480: { items: 2 },
+					575: { items: 2 },
+					768: { items: 2 },
+					991: { items: 3 },
+					1200: { items: 4 }
+				}
+			});
+		});
+	}
+
 	
 	$(function(){
+		carouselBriedsmaid();
 		mobileMenuOutsideClick();
 		parallax();
 		offcanvasMenu();
@@ -227,6 +249,5 @@
 		counter();
 		counterWayPoint();
 	});
-
 
 }());

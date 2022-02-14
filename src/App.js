@@ -1,7 +1,7 @@
 import './App.css';
 
 //Library
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 //Page
 import OpenInvitation from './page/OpenInvitation';

@@ -5,11 +5,11 @@ export default function Guestbook() {
     <div className='container'>
       <div className='row'>
         <div className='col-md-6'>
-          <div class="input-group">
-              <label class="control-label">Username</label>
-              <input type="text" class="form-control form-borderless" placeholder="Username" />
+          <div className="input-group">
+              <label className="control-label">Username</label>
+              <input type="text" className="form-control form-borderless" placeholder="Username" />
               <span className='prefix-icon'>
-                <i class="fa-solid fa-user"></i>
+                <i className="fa-solid fa-user"></i>
               </span>
           </div>
         </div>
