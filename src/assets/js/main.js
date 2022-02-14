@@ -236,18 +236,18 @@
 
 	
 	$(function(){
-		carouselBriedsmaid();
-		mobileMenuOutsideClick();
-		parallax();
-		offcanvasMenu();
-		burgerMenu();
-		contentWayPoint();
-		dropdown();
-		testimonialCarousel();
-		goToTop();
-		loaderPage();
-		counter();
-		counterWayPoint();
+		// carouselBriedsmaid();
+		// mobileMenuOutsideClick();
+		// parallax();
+		// offcanvasMenu();
+		// burgerMenu();
+		// contentWayPoint();
+		// dropdown();
+		// testimonialCarousel();
+		// goToTop();
+		// loaderPage();
+		// counter();
+		// counterWayPoint();
 	});
 
 }());

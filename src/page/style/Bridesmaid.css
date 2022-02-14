@@ -3,7 +3,7 @@
 }
 
 .owl-carousel .owl-item .card {
-    padding: 30px;
+    padding: 0px;
     position: relative
 }
 
@@ -21,18 +21,17 @@
 .owl-carousel .owl-item .card .name {
     position: absolute;
     bottom: -20px;
-    left: 33%;
-    color: #101c81;
-    font-size: 1.1rem;
+    left: 40%;
+    color: #fdfdfd;
+    font-size: 16px;
     font-weight: 600;
-    background-color: aquamarine;
-    padding: 0.3rem 0.4rem;
+    background-color: rgb(255, 182, 227);
+    padding: 0.5rem 1.2rem;
     border-radius: 5px;
-    box-shadow: 2px 3px 15px #3c405a
 }
 
 .owl-carousel .owl-item .card {
-    opacity: 0.2;
+    opacity: 0.3;
     transform: scale3d(0.8, 0.8, 0.8);
     transition: all 0.3s ease-in-out
 }
@@ -50,7 +49,7 @@
 
 .owl-theme .owl-dots .owl-dot span {
     height: 20px;
-    background: #2a6ba3 !important;
+    background: #ff3f9f !important;
     border-radius: 2px !important;
     opacity: 0.8
 }
@@ -61,7 +60,7 @@
     width: 13px;
     opacity: 1;
     transform: translateY(2px);
-    background: #83b8e7 !important
+    background: #f199d4 !important
 }
 
 @media(min-width: 480.6px) and (max-width: 575.5px) {

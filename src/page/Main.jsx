@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 //Page
-// import Navbar from './component/Navbar';
 import Event from './Event';
 import Gallery from './Gallery';
 import Greeting from './Greeting';
@@ -15,16 +14,17 @@ import CountdownPage from './CountdownPage';
 
 function Main() {
    const { name } = useParams();
+   
     return (
         <>        
             <div id='page'>       
                 {/* <Navbar /> */}
                 <Header name={name} />
-                <Bridesmaid />
                 <Greeting name={name} />
                 <Event />
                 <Gallery />
                 <Ourstory />
+                <Bridesmaid />
                 <CountdownPage />
                 <Guestbook />
             </div>
