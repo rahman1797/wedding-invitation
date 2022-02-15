@@ -5,29 +5,33 @@ import './style/Bridesmaid.css'
 
 import test from '../assets/images/face-evita.jpg';
 
+import Instagram from '../assets/images/svg/instagram-black.webp'
+
+import Frame1 from '../assets/images/frame-1.png'
+
+
 export default class Bridesmaid extends Component {
 
   render() {
 
     const options = {
-        margin: 30,
-        autoplay: true,
-        autoplayTimeout: 1500,
+        margin: 10,
+        // autoplay: true,
+        // autoplayTimeout: 2300,
         items: 1,
         autoplayHoverPause: false,
-        stagePadding :20,
+        // stagePadding :20,
         center: true,
         nav: false,
-        margin: 30,
         dots: true, 
         navText: ["Prev", "Next"],
-        smartSpeed: 1000,
+        // smartSpeed: 1000,
         responsive: {
             0: {
-                items: 1,
+                items: 2,
             },
             400: {
-                items: 1,
+                items: 2,
             },
             600: {
                 items: 2,
@@ -43,106 +47,62 @@ export default class Bridesmaid extends Component {
     };
 
     return (
-        <OwlCarousel className='owl-theme' {...options} loop>
-            <div class='item'>
-                <div className="card">
-                    <div className="img-card"> 
+        <div className='row'>
+            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <img className='frame mb-4' src={Frame1} alt="" />
+                <h1 className='playball heading-white-background'>Our Bridesmaid</h1>
+            </div>
+            <OwlCarousel className='owl-theme' {...options} loop>
+                <div className='row d-flex'>
+                    <div className="mx-auto img-card"> 
                         <img src={test} alt="" /> 
                     </div>
-                    <div className="testimonial mt-4 mb-2">Lorem ipsum.</div>
-                    <div className="name">Bella</div>
+                    <div className='col-12 madurai'>
+                        <div className="name">Bella</div>
+                    </div>
                 </div>
-            </div>
-            <div class='item'>
-                <div className="card">
-                    <div className="img-card"> 
+                <div className='row d-flex'>
+                    <div className="mx-auto img-card"> 
                         <img src={test} alt="" /> 
                     </div>
-                    <div className="testimonial mt-4 mb-2">Lorem ipsum.</div>
-                    <div className="name">Dins</div>
+                    <div className='col-12'>
+                        <div className="name">Dins</div>
+                    </div>
                 </div>
-            </div>
-            <div class='item'>
-                <div className="card">
-                    <div className="img-card"> 
+                <div className='row d-flex'>
+                    <div className="mx-auto img-card"> 
                         <img src={test} alt="" /> 
                     </div>
-                    <div className="testimonial mt-4 mb-2">Lorem ipsum.</div>
-                    <div className="name">Ferri</div>
+                    <div className='col-12'>
+                        <div className="name">Ferri</div>
+                    </div>
                 </div>
-            </div>
-            <div class='item'>
-                <div className="card">
-                    <div className="img-card"> 
+                <div className='row d-flex'>
+                    <div className="mx-auto img-card"> 
                         <img src={test} alt="" /> 
                     </div>
-                    <div className="testimonial mt-4 mb-2">Lorem ipsum.</div>
-                    <div className="name">Putri</div>
+                    <div className='col-12'>
+                        <div className="name">Putri</div>
+                    </div>
                 </div>
-            </div>
-            <div class='item'>
-                <div className="card">
-                    <div className="img-card"> 
+                <div className='row d-flex'>
+                    <div className="mx-auto img-card"> 
                         <img src={test} alt="" /> 
                     </div>
-                    <div className="testimonial mt-4 mb-2">Lorem ipsum.</div>
-                    <div className="name">Tita</div>
+                    <div className='col-12'>
+                        <div className="name">Tita</div>
+                    </div>
                 </div>
-            </div>
-            <div class='item'>
-                <div className="card">
-                    <div className="img-card"> 
+                <div className='row d-flex'>
+                    <div className="mx-auto img-card"> 
                         <img src={test} alt="" /> 
                     </div>
-                    <div className="mt-4 mb-2">Lorem ipsum.</div>
-                    <div className="name">Winda</div>
+                    <div className='col-12'>
+                        <div className="name">Winda</div>
+                    </div>
                 </div>
-            </div>
-        </OwlCarousel>
-        // <div className="owl-carousel owl-theme mt-5">
-        //     <div className="owl-item">
-        //         <div className="card">
-        //             <div className="img-card"> <img src={test} alt="" /> </div>
-        //             <div className="testimonial mt-4 mb-2"> Lorem ipsum. </div>
-        //             <div className="name"> Bella </div>
-        //         </div>
-        //     </div>
-        //     <div className="owl-item">
-        //         <div className="card">
-        //             <div className="img-card"> <img src={test} alt="" /> </div>
-        //             <div className="testimonial mt-4 mb-2"> Lorem ipsum. </div>
-        //             <div className="name"> Dins </div>
-        //         </div>
-        //     </div>
-        //     <div className="owl-item">
-        //         <div className="card">
-        //             <div className="img-card"> <img src={test} alt="" /> </div>
-        //             <div className="testimonial mt-4 mb-2"> Lorem ipsum. </div>
-        //             <div className="name"> Ferri </div>
-        //         </div>
-        //     </div>
-        //     <div className="owl-item">
-        //         <div className="card">
-        //             <div className="img-card"> <img src={test} alt="" /> </div>
-        //             <div className="testimonial mt-4 mb-2"> Lorem ipsum. </div>
-        //             <div className="name"> Putri </div>
-        //         </div>
-        //     </div>
-        //     <div className="owl-item">
-        //         <div className="card">
-        //             <div className="img-card"> <img src={test} alt="" /> </div>
-        //             <div className="testimonial mt-4 mb-2"> Lorem ipsum. </div>
-        //             <div className="name"> Tita </div>
-        //         </div>
-        //     </div>
-        //     <div className="owl-item">
-        //         <div className="card">
-        //             <div className="img-card"> <img src={test} alt="" /> </div>
-        //             <div className="testimonial mt-4 mb-2"> Lorem ipsum. </div>
-        //             <div className="name"> Winda </div>
-        //         </div>
-        //     </div>
-        // </div>
+            </OwlCarousel>
+        </div>
     )
   }
 }

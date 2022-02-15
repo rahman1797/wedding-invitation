@@ -12,10 +12,11 @@
 * ======================================================= */
 body {
   font-family: "Work Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  /* color: #828282; */
+  color: #472a2a;
   background: #fff;
 }
 
@@ -301,7 +302,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   position: relative;
   /* transition: all 0.5s; */
   width: 100%;
@@ -359,8 +360,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
-  float: left;
+  height: 1000px;
+  /* float: left; */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 #fh5co-counter .display-t,
 #fh5co-counter .display-tc,
@@ -390,6 +393,8 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,

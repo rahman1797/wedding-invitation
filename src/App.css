@@ -6,7 +6,7 @@
   /* waves */
   .ocean {
     background-color: rgba(0, 0, 0, 0);
-    height: 80px; 
+    height: 88px; 
     width: 100%;
     transform: translateY(-60px);
     position: relative;
@@ -17,9 +17,9 @@
   }
   
   .wave {
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23111111'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23111111'/%3E%3C/svg%3E");
     position: absolute;
-    background-repeat: repeat-x;
+    /* background-repeat: repeat-x; */
     width: 200%;
     height: 100%;
     animation: wave 8s ease-in-out reverse infinite;
@@ -30,20 +30,21 @@
     bottom: 0;
     height: 80%;
     animation: wave 13s ease-in-out infinite;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23222222'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23222222'/%3E%3C/svg%3E");
   }
   
   .wave:nth-of-type(3) {
     bottom: 0;
     height: 70%;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23333333'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23333333'/%3E%3C/svg%3E");
     animation: wave 15s ease-in-out reverse infinite;
   }
   .wave:nth-of-type(4) {
     bottom: 0;
-    height: 30%;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    height: 35%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFFFFF'/%3E%3C/svg%3E");
     animation: wave 10s ease-in-out infinite;
+    padding-bottom: 30px;
   }
 
   @media only screen and (min-width: 600px) {
@@ -69,19 +70,27 @@
       100% {transform: translateX(0%);}
   }
 /* END WAVE */
-
+.card-countdown {
+  border-radius: 15px;
+  height: 10em;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background-image: url('/src/assets/images/headerimage1.jpg'); */
+  width: 100%;
+  padding: 10px 40px;
+}
 .countdown {
   text-align: center;
   line-height: 20px;
   background-image: url('/src/assets/images/pink-texture-background.jpg');
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
   color: black;
   font-weight: 600;
-  border-radius: 50%;
-  box-shadow: 2px 2px 10px rgb(134, 134, 134);
-  width: 70px;
-  height: 70px;
-  padding: 10px;
+  bottom: 0;
+  border-radius: 8px;
+  height: 80px;
+  width: 18vw;
+  display: flex;
 }
 
 .ourstory-banner {
@@ -199,7 +208,7 @@ p.story-desc {
 
 .covid-banner, .countdown-banner {
   background-image: url('./assets/images/background1.png');
-  background-size: 100% 100%;
+  background-size: 100% 101%;
   padding-top: 50px;
   padding-bottom: 60px;
   background-repeat: no-repeat;
@@ -282,4 +291,20 @@ p.story-desc {
   border: 0;
   border-radius: 20px !important;
   box-shadow: 2px 2px 13px rgb(255, 182, 227);
+}
+
+.top-frame {
+  width: 100%;
+  filter: invert();
+  background-repeat: no-repeat;
+  margin-top: -90px;
+}
+.bottom-frame {
+  width: 100%;
+  filter: invert();
+  background-repeat: no-repeat;
+}
+
+#greeting {
+  padding-bottom: 30px;
 }

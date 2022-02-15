@@ -2,10 +2,16 @@ import React from 'react';
 import Background from '../assets/images/image1.jpg'
 import Frame1 from '../assets/images/frame-1.png'
 
+import TopFrame from '../assets/images/top-frame.png'
+import BottomFrame from '../assets/images/bottom-frame.png'
+
 function Event() {
   return (
+      <>
+
     <div id="fh5co-event" className="fh5co-bg" style={{backgroundImage: `url(${Background})`}}>
         <div className="overlay"></div>
+        <img className='top-frame' src={TopFrame} alt='' />
         <div className="container">
             <div className="row">
                 <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -57,10 +63,16 @@ function Event() {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
+        
+
     </div>
+    </>
   );
 }
 

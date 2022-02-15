@@ -8,7 +8,7 @@ export default class Header extends Component {
 	render(){
 
 		return (
-			<header id="home" className="fh5co-cover" role="banner" data-stellar-background-ratio="0.5" style={{ backgroundImage: `url(${HeaderImage})`  }}>
+			<header id="home" className="fh5co-cover" role="banner" style={{ backgroundImage: `url(${HeaderImage})`  }}>
 				<div className="overlay"></div>
 				<div className="container">
 					<div className="row">
@@ -17,7 +17,6 @@ export default class Header extends Component {
 								<div className="display-tc animate-box" >
 									<h1 className='playball'>Evita & Rahman</h1>
 									<h2>We're getting marriage</h2>
-									<div className="simply-countdown simply-countdown-one"></div>
 									<div className='col-12 mt-3 greeting blur-background mx-auto'>
 										<i>Kepada Yth <br />
 										Bapak/Ibu/Saudara/i <br />

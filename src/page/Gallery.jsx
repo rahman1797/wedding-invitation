@@ -9,11 +9,13 @@ import Pink1 from '../assets/images/prewedding/pink1.jpg'
 import Pink2 from '../assets/images/prewedding/pink2.jpg'
 
 import Frame2 from '../assets/images/frame-2.png'
+import BottomFrame from '../assets/images/bottom-frame.png'
+
 
 function Gallery() {
   return (
         <>
-        <div id="fh5co-gallery" className="fh5co-section-gray">
+        <div id="fh5co-gallery" className="">
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">

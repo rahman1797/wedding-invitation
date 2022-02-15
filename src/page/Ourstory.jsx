@@ -23,7 +23,7 @@ function Ourstory() {
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                         <img className='frame mb-4' src={Frame1} alt="" />
-                        <h1 className='playball heading-white-background'>Our Love Story</h1>
+                        <h1 className='playball'>Our Love Story</h1>
                     </div>
                 </div>
                 <div className="row">
@@ -33,7 +33,7 @@ function Ourstory() {
                                 <div className="timeline-badge" style={{backgroundImage: `url(${FirstMeet})`}}></div>
                                 <div className="timeline-panel">
                                     <div className="timeline-heading">
-                                        <h3 className="timeline-title">First We Meet</h3>
+                                        <h3 className="timeline-title font-weight-bolder">First We Meet</h3>
                                         <span className="date">2011 (Junior high School)</span>
                                     </div>
                                     <div className="timeline-body">
@@ -45,7 +45,7 @@ function Ourstory() {
                                 <div className="timeline-badge" style={{backgroundImage: `url(${Relationship})`}}></div>
                                 <div className="timeline-panel">
                                     <div className="timeline-heading">
-                                        <h3 className="timeline-title">Relationship</h3>
+                                        <h3 className="timeline-title font-weight-bolder">Relationship</h3>
                                         <span className="date">2015</span>
                                     </div>
                                     <div className="timeline-body">
@@ -57,7 +57,7 @@ function Ourstory() {
                                 <div className="timeline-badge" style={{backgroundImage: `url(${Engagement})`}}></div>
                                 <div className="timeline-panel">
                                     <div className="timeline-heading">
-                                        <h3 className="timeline-title">Engagement</h3>
+                                        <h3 className="timeline-title font-weight-bolder">Engagement</h3>
                                         <span className="date">2021</span>
                                     </div>
                                     <div className="timeline-body">
@@ -69,7 +69,7 @@ function Ourstory() {
                                 <div className="timeline-badge" style={{backgroundImage: `url(${Married})`}}></div>
                                 <div className="timeline-panel">
                                     <div className="timeline-heading">
-                                        <h3 className="timeline-title">Married</h3>
+                                        <h3 className="timeline-title font-weight-bolder">Married</h3>
                                         <span className="date">2022</span>
                                     </div>
                                     <div className="timeline-body">
