@@ -11,7 +11,7 @@ export default class Greeting extends Component {
     render() {
         return (
             <>
-            <div className="ocean">
+            <div className="wave-group">
                 <div className="wave"></div>
                 <div className="wave"></div>
                 <div className="wave"></div>

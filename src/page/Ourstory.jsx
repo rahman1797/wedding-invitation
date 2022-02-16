@@ -11,7 +11,7 @@ import Frame1 from '../assets/images/frame-1.png'
 function Ourstory() {
   return (
       <>
-      <div className="ocean">
+      <div className="wave-group">
             <div className="wave"></div>
             <div className="wave"></div>
             <div className="wave"></div>

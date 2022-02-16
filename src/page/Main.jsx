@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import Bridesmaid from './Bridesmaid';
 import Guestbook from './Guestbook';
 import CountdownPage from './CountdownPage';
+import Footer from './Footer';
 
 function Main() {
    const { name } = useParams();
@@ -27,6 +28,7 @@ function Main() {
                 <Bridesmaid />
                 <CountdownPage />
                 <Guestbook />
+                <Footer />
             </div>
             <div className='fixed-bottom text-center mx-auto'>
                 <button className='btn btn-default'><i className="fas fa-gift"></i> Kirim Hadiah</button>
