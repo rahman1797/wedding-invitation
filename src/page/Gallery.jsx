@@ -18,7 +18,7 @@ function Gallery() {
         <div id="fh5co-gallery" className="">
             <div className="container mb-5">
                 <div className="row">
-                    <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                    <div className="col-md-12 text-center fh5co-heading animate-box">
                         <img className='frame mb-2' src={Frame2} alt="" />
                         <h1 className='playball heading-white-background'>Our Gallery</h1>
                     </div>

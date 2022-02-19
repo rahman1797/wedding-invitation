@@ -46,7 +46,7 @@ export default class Bridesmaid extends Component {
 
     return (
         <div className='row'>
-            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+            <div className="col-md-12 text-center fh5co-heading animate-box">
                 <img className='frame mb-4' src={Frame1} alt="" />
                 <h1 className='playball heading-white-background'>Our Bridesmaid</h1>
                 Click to launch to their instagram

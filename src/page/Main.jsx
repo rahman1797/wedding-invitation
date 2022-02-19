@@ -5,28 +5,25 @@ import Gallery from './Gallery';
 import Greeting from './Greeting';
 import Header from './Header';
 import Ourstory from './Ourstory';
-
-import {Helmet} from "react-helmet";
-import { useParams } from "react-router-dom";
 import Bridesmaid from './Bridesmaid';
-import Guestbook from './Guestbook';
 import CountdownPage from './CountdownPage';
+import Guestbook from './Guestbook';
 import Footer from './Footer';
+import {Helmet} from "react-helmet";
 
 function Main() {
-   const { name } = useParams();
    
     return (
         <>        
             <div id='page'>       
                 {/* <Navbar /> */}
-                <Header name={name} />
-                <Greeting name={name} />
+                <Header />
+                <Greeting />
                 <Event />
                 <Gallery />
                 <Ourstory />
                 <Bridesmaid />
-                <CountdownPage />
+                <CountdownPage /> 
                 <Guestbook />
                 <Footer />
             </div>
