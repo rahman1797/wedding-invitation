@@ -211,10 +211,10 @@ p.story-desc {
     filter: invert();
 }
 
-.heart i {
+/* .heart i {
     font-size: 30px;
     padding: 10px;
-}
+} */
 
 .covid-img {
   width: 90px;

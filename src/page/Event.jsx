@@ -13,12 +13,12 @@ function Event() {
 
     return (
         <>
-        <div id="fh5co-event" className="fh5co-bg" style={{backgroundImage: `url(${Background})`}}>
+        <div id="section-event" className="section-bg" style={{backgroundImage: `url(${Background})`}}>
             <div className="overlay"></div>
             <img className='top-frame' src={TopFrame} alt='' />
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12 text-center fh5co-heading animate-box">
+                    <div className="col-md-12 text-center section-heading animate-box">
                         <img className='frame mb-4 event' src={Frame1} alt="" />
                         <h2 className='playball heading-color-background'>Wedding Events</h2>
                     </div>

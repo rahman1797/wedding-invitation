@@ -13,7 +13,7 @@ function Header() {
 	const data = useSelector((state) => state.data.find(obj => (slug_url.name) ? obj.slug_url === slug_url.name : null));
 		
 	return (
-		<header id="home" className="fh5co-cover" role="banner" style={{ backgroundImage: `url(${HeaderImage})`  }}>
+		<header id="home" className="section-cover" role="banner" style={{ backgroundImage: `url(${HeaderImage})`  }}>
 			<div className="overlay"></div>
 			<div className="container">
 				<div className="row">

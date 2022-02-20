@@ -40,7 +40,7 @@ export default function Guestbook() {
     onValue(starCountRef, (snapshot) => {
       const data = snapshot.val();
       const value = Object.values(data);
-      setMessage(...message, value);
+      setMessage(...message, value.reverse());
     });
 
   }
@@ -110,8 +110,13 @@ export default function Guestbook() {
 
   useEffect(() => {
     getData();
-    AutoScroll();
+    // AutoScroll();
   }, []);
+
+  // window.setInterval(function() {
+  //   var elem = document.getElementById('guest-book');
+  //   elem.scrollTop = elem.scrollHeight;
+  // }, 15000);
 
   return (
     <div className='container'>
@@ -153,7 +158,7 @@ export default function Guestbook() {
           </div>
         </div>
         <div className='col-md-6'>
-          <div className='card' id='guest-book' ref={messagesEndRef}>
+          <div className='card' id='guest-book'>
             <div className='p-3'>
             
               { message.length === 0 ? 

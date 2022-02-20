@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Covid from './Covid';
 //photos
-import Evita from '../assets/images/face-evita.jpg'
-import Rahman from '../assets/images/face-rahman.jpg'
+import Evita from '../assets/images/face_evita_framing.png'
+import Rahman from '../assets/images/face_rahman_framing.png'
 import Instagram from '../assets/images/svg/instagram.svg'
 import Frame1 from '../assets/images/frame-1.png'
+// import round_frame from '../assets/images/round-frame.png'
 
 export default class Greeting extends Component {
     
@@ -35,11 +36,12 @@ export default class Greeting extends Component {
                     <div className="couple-wrap animate-box">
                         <div className="couple-half my-4">
                             <div className="groom">
+                                {/* <img src={round_frame} className='round-frame float-right' alt='' /> */}
                                 <img src={Evita} alt="bride" className="img-responsive" />
                             </div>
                             <div className="desc-groom">
                                 <h3 className='playball bried-groom'>Evita Dwi Oktaviani, S.Pd.</h3>
-                                <p className="desc">Putri dari Bpk. Khasanudin & Ibu Meti</p>
+                                <p className="desc mr-4">Putri dari pasangan Bpk. Khasanudin & Ibu Meti</p>
                                 <a href='https://www.instagram.com/evita.do/'><img className='ig-icon' src={Instagram} alt='' /></a>
                             </div>
                         </div>
@@ -50,7 +52,7 @@ export default class Greeting extends Component {
                             </div>
                             <div className="desc-bride">
                                 <h3 className='playball bried-groom'>Maulana Rahman Nur, S.Kom.</h3>
-                                <p className="desc">Putra dari Bpk. Usep Muhamad Sigih & Ibu Yuni Puspitorini</p>
+                                <p className="desc ml-4">Putra dari pasangan Bpk. Usep Muhamad Sigih & Ibu Yuni Puspitorini</p>
                                 <a href='https://www.instagram.com/mrahman.n/'><img className='ig-icon' src={Instagram} alt='' /></a>
                             </div>
                         </div>

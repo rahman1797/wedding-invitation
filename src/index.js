@@ -4,15 +4,20 @@ import App from './App';
 import storeRedux from './Redux/Store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from "react-router-dom";
+// import SimpleReactLightbox from 'simple-react-lightbox'
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   // <React.StrictMode>
+  // <SimpleReactLightbox>
   <Provider store={storeRedux}>
     <Router>
-      <App />
+      
+        <App />
+      
     </Router>
   </Provider>,
+  // </SimpleReactLightbox>,
   // </React.StrictMode>,
   rootElement
 );

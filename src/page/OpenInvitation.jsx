@@ -46,7 +46,7 @@ function OpenInvitation() {
                 <script src="assets/js/main.js"></script>
             </Helmet> */}
         </header>
-        // <header id="fh5co-header" className="fh5co-cover" role="banner" data-stellar-background-ratio="1">
+        // <header id="section-header" className="section-cover" role="banner" data-stellar-background-ratio="1">
         // 	<div className="overlay"></div>
         // 	<div className="container">
         // 		<div className="row">

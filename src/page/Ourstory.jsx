@@ -21,7 +21,7 @@ function Ourstory() {
             <div id="couple-story">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12 text-center fh5co-heading animate-box">
+                    <div className="col-md-12 text-center section-heading animate-box">
                         <img className='frame mb-4' src={Frame1} alt="" />
                         <h1 className='playball'>Our Love Story</h1>
                     </div>
