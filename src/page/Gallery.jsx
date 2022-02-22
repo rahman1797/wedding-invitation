@@ -10,25 +10,59 @@ import Pink2 from '../assets/images/prewedding/pink2.jpg'
 
 import Frame2 from '../assets/images/frame-2.png'
 
+import { SRLWrapper } from "simple-react-lightbox";
 
 function Gallery() {
+
+    const options = {
+        settings: {
+          autoplaySpeed: 1500,
+          transitionSpeed: 900,
+          slideAnimationType: 'slide'
+        },
+        caption: {
+          showCaption: false
+        }
+      };
+
   return (
-        <> 
+        <>
+        {/* <Lightbox />  */}
+        
         <div id="section-gallery" className="">
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-md-12 text-center section-heading animate-box">
-                        <img className='frame mb-2' src={Frame2} alt="" />
+                        <img className='frame mb-2' src={Frame2} alt="" loading="lazy" />
                         <h1 className='playball heading-white-background'>Our Gallery</h1>
                     </div>
                 </div>
                 <div className="row row-bottom-padded-md">
                     <div className="col-md-12">
+                    
                         <ul id="section-gallery-list">
-                            <li className="one-third animate-box" data-animate-effect="fadeIn" style={{backgroundImage: `url(${Jawa1})`}}> 
-                                <a href={Jawa1}></a>
-                            </li>
-                            <li className="one-third animate-box" data-animate-effect="fadeIn" style={{backgroundImage: `url(${Jawa2})`}}>
+                        <SRLWrapper options={options}>  
+                            <div className='row'>
+                            <a href={Jawa1} className="col-md-4 col-6">
+                                <img className="one-third w-100 animate-box" src={Jawa1} alt="" loading="lazy"/>
+                            </a>
+                            <a href={Jawa2} className="col-md-4 col-6">
+                                <img className="one-third w-100 animate-box" src={Jawa2} alt="" loading="lazy"/>
+                            </a>
+                            <a href={Pink1} className="col-md-4 col-6">
+                                <img className="one-third w-100 animate-box" src={Pink1} alt="" loading="lazy"/>
+                            </a>
+                            <a href={Pink2} className="col-md-4 col-6">
+                                <img className="one-third w-100 animate-box" src={Pink2} alt="" loading="lazy"/>
+                            </a>
+                            <a href={Kuning1} className="col-md-4 col-6">
+                                <img className="one-third w-100 animate-box" src={Kuning1} alt="" loading="lazy"/>
+                            </a>
+                            <a href={Kuning2} className="col-md-4 col-6">
+                                <img className="one-third w-100 animate-box" src={Kuning2} alt="" loading="lazy"/>
+                            </a>
+                            </div>
+                            {/* <li className="one-third animate-box" data-animate-effect="fadeIn" style={{backgroundImage: `url(${Jawa2})`}}>
                                 <a href={Jawa2} className="color-2"></a>
                             </li>
                             <li className="one-third animate-box" data-animate-effect="fadeIn" style={{backgroundImage: `url(${Pink1})`}}>
@@ -39,11 +73,10 @@ function Gallery() {
                             </li>
                             <li className="one-third animate-box" data-animate-effect="fadeIn" style={{backgroundImage: `url(${Kuning1})`}}>
                                 <a href={Kuning1} className="color-3"></a>
-                            </li>
-                            <li className="one-third animate-box" data-animate-effect="fadeIn" style={{backgroundImage: `url(${Kuning2})`}}>
-                                <a href={Kuning2} className="color-4"></a>
-                            </li>
-                        </ul>		
+                            </li> */}
+                            </SRLWrapper>	
+                        </ul>	
+                        
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import './style/OpenInvitation.css';
 
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-// import { Helmet } from 'react-helmet';
+import icon from '../assets/images/love-1.png'
 
 function OpenInvitation() {
 
@@ -14,10 +14,10 @@ function OpenInvitation() {
             <div className="container m-auto">
                 <div className="row">
                     <div className="col-md-8 mx-auto col-md-offset-2 text-center">
-                        <div className="animate-box " data-animate-effect="fadeIn">
+                        <div className="animate-box" data-animate-effect="fadeIn">
                             <div className='row'>
                                 <div className='col-12'>
-                                    <img className='img-logo' src='../assets/images/love-1.png' alt='love-1' />
+                                    <img className='img-logo' src={icon} alt='love-1' />
                                 </div>
 
                                 <div className='col-8 blur-background'>

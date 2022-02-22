@@ -58,7 +58,7 @@ export default class Bridesmaid extends Component {
             <OwlCarousel className='owl-theme' {...options} loop>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/bellaydt?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={bella} alt="" /> 
+                        <img src={bella} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12 madurai'>
                         <div className="name">Bella</div>
@@ -66,7 +66,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/dinssetya?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={test} alt="" /> 
+                        <img src={test} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Dins</div>
@@ -74,7 +74,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/ferrinandaa?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={ferri} alt="" /> 
+                        <img src={ferri} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Ferri</div>
@@ -82,7 +82,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/putridnrahma?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={putri} alt="" /> 
+                        <img src={putri} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Putri</div>
@@ -90,7 +90,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/titarsita?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={tita} alt="" /> 
+                        <img src={tita} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Tita</div>
@@ -98,7 +98,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/windazu?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={test} alt="" /> 
+                        <img src={test} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Winda</div>

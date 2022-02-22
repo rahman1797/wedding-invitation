@@ -360,3 +360,33 @@ footer {
 select:required:invalid {
   color: var(--placeholder);
 }
+
+
+/* REACT SIMPLE LIGHT BOX */
+/* gambar di lightbox */
+.css-1eqfn0t {
+  border-radius: 20px;
+}
+
+/* thumbnail di lightbox */
+.css-1o906pp {
+  height: 110px;
+  margin: 0 4px;
+}
+
+@media (max-width: 768px){
+  .css-1o906pp {
+      height: 100px !important ;
+      width: 80px;
+      margin-bottom: 60px !important;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .css-1o906pp {
+      height: 100px;
+      width: 80px;
+      margin-bottom: 75px;
+  }
+} */
+

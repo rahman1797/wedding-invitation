@@ -129,7 +129,9 @@ export default function Guestbook() {
       <div className='row'>
         <div className='col-md-6 mb-5'>
           <div className='card p-5' id='form-book'>
+            
             <form id='form-input' onSubmit={handleSubmit}>
+            
               <div className="form-group">
                 <span className='prefix-icon'>
                   <i className="fa-solid fa-user"></i>
