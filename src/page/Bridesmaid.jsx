@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import './style/Bridesmaid.css'
 
-import test from '../assets/images/face-evita.jpg';
-import bella from '../assets/images/bridesmaid/bella.jpg'
-import dins from '../assets/images/bridesmaid/dins.jpg'
-import ferri from '../assets/images/bridesmaid/ferri.jpg'
-import tita from '../assets/images/bridesmaid/tita.jpg'
-import putri from '../assets/images/bridesmaid/putri.jpg'
+import bella from '../assets/images/bridesmaid/bella.jpeg'
+import dins from '../assets/images/bridesmaid/dins.jpeg'
+import ferri from '../assets/images/bridesmaid/ferri.jpeg'
+import tita from '../assets/images/bridesmaid/tita.jpeg'
+import putri from '../assets/images/bridesmaid/putri.jpeg'
+import winda from '../assets/images/bridesmaid/winda.jpeg'
 
 import Frame1 from '../assets/images/frame-1.png'
 
@@ -99,7 +99,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/windazu?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={test} alt="" loading="lazy"/> 
+                        <img src={winda} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Winda</div>

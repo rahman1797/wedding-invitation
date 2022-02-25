@@ -8,6 +8,14 @@ import Kuning2 from '../assets/images/prewedding/kuning2.jpg'
 import Pink1 from '../assets/images/prewedding/pink1.jpg'
 import Pink2 from '../assets/images/prewedding/pink2.jpg'
 
+//thumbnails
+import ThumbJawa1 from '../assets/images/prewedding/thumb-jawa1.jpg'
+import ThumbJawa2 from '../assets/images/prewedding/thumb-jawa2.jpg'
+import ThumbKuning1 from '../assets/images/prewedding/thumb-kuning1.jpg'
+import ThumbKuning2 from '../assets/images/prewedding/thumb-kuning2.jpg'
+import ThumbPink1 from '../assets/images/prewedding/thumb-pink1.jpg'
+import ThumbPink2 from '../assets/images/prewedding/thumb-pink2.jpg'
+
 import Frame2 from '../assets/images/frame-2.png'
 
 import { SRLWrapper } from "simple-react-lightbox";
@@ -18,7 +26,10 @@ function Gallery() {
         settings: {
           autoplaySpeed: 1500,
           transitionSpeed: 900,
-          slideAnimationType: 'slide'
+          slideAnimationType: 'both',
+        },
+        buttons: {
+            showDownloadButton: false
         },
         caption: {
           showCaption: false
@@ -43,22 +54,22 @@ function Gallery() {
                         <ul id="section-gallery-list">
                         <SRLWrapper options={options}>  
                             <div className='row'>
-                            <a href={Jawa1} className="col-md-4 col-6">
+                            <a href={ThumbJawa1} className="col-md-4 col-6">
                                 <img className="one-third w-100 animate-box" src={Jawa1} alt="" loading="lazy"/>
                             </a>
-                            <a href={Jawa2} className="col-md-4 col-6">
+                            <a href={ThumbJawa2} className="col-md-4 col-6">
                                 <img className="one-third w-100 animate-box" src={Jawa2} alt="" loading="lazy"/>
                             </a>
-                            <a href={Pink1} className="col-md-4 col-6">
+                            <a href={ThumbPink1} className="col-md-4 col-6">
                                 <img className="one-third w-100 animate-box" src={Pink1} alt="" loading="lazy"/>
                             </a>
-                            <a href={Pink2} className="col-md-4 col-6">
+                            <a href={ThumbPink2} className="col-md-4 col-6">
                                 <img className="one-third w-100 animate-box" src={Pink2} alt="" loading="lazy"/>
                             </a>
-                            <a href={Kuning1} className="col-md-4 col-6">
+                            <a href={ThumbKuning1} className="col-md-4 col-6">
                                 <img className="one-third w-100 animate-box" src={Kuning1} alt="" loading="lazy"/>
                             </a>
-                            <a href={Kuning2} className="col-md-4 col-6">
+                            <a href={ThumbKuning2} className="col-md-4 col-6">
                                 <img className="one-third w-100 animate-box" src={Kuning2} alt="" loading="lazy"/>
                             </a>
                             </div>
