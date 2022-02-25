@@ -168,7 +168,7 @@ export default function Guestbook() {
                 'No message found' : 
                 message.map(obj => 
                   <>
-                    <strong>{ obj.nama }</strong>
+                    <strong key={obj.id}>{ obj.nama }</strong>
                     <br />
                     <small><Moment format='DD MMM YYYY HH:mm'>{ obj.tanggal }</Moment></small>
                     <p>{ obj.pesan }</p>

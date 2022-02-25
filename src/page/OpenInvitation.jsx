@@ -1,13 +1,32 @@
-import React from 'react';
-import './style/OpenInvitation.css';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch} from 'react-redux'
+import { Link, useParams, useNavigate } from "react-router-dom";
 
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import './style/OpenInvitation.css';
 import icon from '../assets/images/love-1.png'
 
 function OpenInvitation() {
 
     const { name } = useParams();
+
+    let slug_url = useParams();
+	const data = useSelector((state) => state.data.find(obj => (slug_url.name) ? obj.slug_url === slug_url.name : null));
+  
+    let navigate = useNavigate();
+
+    useEffect(() => {
+        if(typeof data === 'undefined'){
+            return navigate(`/url-invalid`);
+        } 
+    },[]);
+
+    const Dispatch = useDispatch();
+
+    const OpenInvitation = () => {
+        Dispatch({
+            type: 'OPEN_INVITATION'  
+        });
+    };
 
     return (
         <header id='invitation' className='d-flex'>
@@ -33,7 +52,7 @@ function OpenInvitation() {
                                 </div>          
                                 
                                 <div className='col-12'>
-                                    <Link to={"/" + name + "/opened"} className="btn btn-default btn-sm mx-auto">Open Invitation</Link>
+                                    <Link to={"/" + name + "/opened"} className="btn btn-sm mx-auto" onClick={ OpenInvitation }><i className="fa-solid fa-envelope-open"></i> Open Invitation</Link>
                                 </div>
 
                             </div>                      
@@ -42,28 +61,7 @@ function OpenInvitation() {
                     </div>
                 </div>
             </div>
-            {/* <Helmet>
-                <script src="assets/js/main.js"></script>
-            </Helmet> */}
         </header>
-        // <header id="section-header" className="section-cover" role="banner" data-stellar-background-ratio="1">
-        // 	<div className="overlay"></div>
-        // 	<div className="container">
-        // 		<div className="row">
-        // 			<div className="col-md-8 col-md-offset-2 text-center">
-        // 				<div className="display-t">
-        // 					<div className="display-tc animate-box" data-animate-effect="fadeIn">
-        // 						<h1>You're invited to our wedding</h1>
-        // 						<h2>Kami akan menikah</h2>
-        // 						<div className="simply-countdown simply-countdown-one"></div>
-                                
-        // 						<p><a href="#" className="btn btn-default btn-sm">Simpan tanggal</a></p>
-        // 					</div>
-        // 				</div>
-        // 			</div>
-        // 		</div>
-        // 	</div>
-        // </header>
     );
 }
 

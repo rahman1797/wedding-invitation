@@ -5,6 +5,7 @@ import './style/Bridesmaid.css'
 
 import test from '../assets/images/face-evita.jpg';
 import bella from '../assets/images/bridesmaid/bella.jpg'
+import dins from '../assets/images/bridesmaid/dins.jpg'
 import ferri from '../assets/images/bridesmaid/ferri.jpg'
 import tita from '../assets/images/bridesmaid/tita.jpg'
 import putri from '../assets/images/bridesmaid/putri.jpg'
@@ -66,7 +67,7 @@ export default class Bridesmaid extends Component {
                 </a>
                 <a target='_blank' rel="noreferrer" href='https://instagram.com/dinssetya?utm_medium=copy_link' className='row d-flex'>
                     <div className="mx-auto img-card"> 
-                        <img src={test} alt="" loading="lazy"/> 
+                        <img src={dins} alt="" loading="lazy"/> 
                     </div>
                     <div className='col-12'>
                         <div className="name madurai">Dins</div>

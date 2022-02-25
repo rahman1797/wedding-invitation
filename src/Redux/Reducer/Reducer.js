@@ -1,19 +1,33 @@
 import Data from '../../assets/json/invitation.json'
 
 const globalState = {
-    data: Data
+    data: Data,
+    openedInvitation: false
 }
 
 const rootReducer = (state = globalState, action) => {
-
-    if(action.type === "FILTER_GROUP"){
-        return state;
-    }
-    if(action.type === "FILTER_INDIVIDUAL"){
-        return state;
-    }
     
-    return state;
+    switch (action.type) {
+        case "OPEN_INVITATION":
+            return { 
+                ...state,
+                openedInvitation: true
+                
+            }
+        case "CLOSE_INVITATION":
+            return { 
+                ...state,
+                openedInvitation: false
+            }
+
+        default: return state;
+    }
+
+    // if(action.type === "OPEN_INVITATION"){
+    //     .state;
+    // }
+    
+    // return state;
 }
 
 export default rootReducer;
