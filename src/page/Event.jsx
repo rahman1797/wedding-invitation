@@ -43,7 +43,7 @@ function Event() {
                                             <span>Gedung Chandraca</span>
                                         </div>
                                         <p className='d-inline-block'>Jl R.A. Fadillah, Cijantung - Jakarta Timur <br />(depan SMPN 103)</p>
-                                        <a href='https://goo.gl/maps/av2YCpw5b8Jn8iyB7' className='btn btn-default'> Open Google Maps </a>
+                                        <a href='https://goo.gl/maps/av2YCpw5b8Jn8iyB7' className='btn btn-slide-pink'> Open Google Maps </a>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-sm-6 text-center">
@@ -62,7 +62,7 @@ function Event() {
                                             <span>Gedung Chandraca</span>
                                         </div>
                                         <p className='d-inline-block' >Jl R.A. Fadillah, Cijantung - Jakarta Timur <br />(depan SMPN 103)</p>
-                                        <a href='https://goo.gl/maps/av2YCpw5b8Jn8iyB7' className='btn btn-default'> Open Google Maps </a>
+                                        <a href='https://goo.gl/maps/av2YCpw5b8Jn8iyB7' className='btn btn-slide-pink'> Open Google Maps </a>
                                     </div>
                                 </div>
                             </div>

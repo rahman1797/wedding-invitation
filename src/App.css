@@ -325,6 +325,8 @@ p.story-desc {
 }
 
 .form-borderless{
+  -webkit-appearance: none;
+  -moz-appearance: none;
   padding-left: 55px;
   height: 50px;
   border: 0;
@@ -338,6 +340,7 @@ p.story-desc {
 
 .form-borderless:focus  {
   box-shadow: 2px 2px 13px rgb(255, 143, 212);
+  padding-left: 55px;
 }
 
 .top-frame {
@@ -425,4 +428,13 @@ body::-webkit-scrollbar {
 
 .btn-shadow {
   box-shadow: 0.5px 0.5px 8px rgba(255, 0, 179, 0.411);
+}
+
+.not-found-banner {
+  height: 90vh;
+  display: flex;
+}
+
+.notfound-img {
+  width: 300px;
 }

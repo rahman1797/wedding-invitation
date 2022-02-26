@@ -52,7 +52,7 @@ function OpenInvitation() {
                                 </div>          
                                 
                                 <div className='col-12'>
-                                    <Link to={"/" + name + "/opened"} className="btn btn-sm mx-auto" onClick={ OpenInvitation }><i className="fa-solid fa-envelope-open"></i> Open Invitation</Link>
+                                    <Link to={"/" + name + "/opened"} className="btn btn-sm mx-auto btn-slide-pink" onClick={ OpenInvitation }><i className="fa-solid fa-envelope-open"></i> Open Invitation</Link>
                                 </div>
 
                             </div>                      

@@ -35,8 +35,7 @@ export default class CountdownPage extends Component {
             <h3 className=''>Until 13 March 2022</h3>
             <Countdown date={new Date(2022,2,13)} renderer={renderer} />
           </div>
-
-          <a target="_blank" rel="noreferrer" href="https://www.google.com/calendar/render?action=TEMPLATE&text=EvitaRahmanWedding&dates=20220313T080000/20220313T100000" className="btn btn-default btn-sm mt-5">Save The Date</a>
+          <a target="_blank" rel="noreferrer" href="https://www.google.com/calendar/render?action=TEMPLATE&text=EvitaRahmanWedding&dates=20220313T080000/20220313T100000" className="btn btn-slide-pink btn-sm mt-5">Save The Date</a>
         </div>
       </div>
     )

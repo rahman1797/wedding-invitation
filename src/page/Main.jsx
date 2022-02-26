@@ -13,13 +13,14 @@ import Guestbook from './Guestbook';
 import Footer from './Footer';
 import {Helmet} from "react-helmet";
 import AOS from 'aos';
+import copy from 'copy-to-clipboard';
 
-import Backsound from '../assets/music/backsound-compressed.ogg'
+import Backsound from '../assets/music/audio.mp3'
 import mandiri from '../assets/images/svg/mandiri.svg'
 import cimb from '../assets/images/svg/cimb.svg'
 import gift from '../assets/images/svg/gift.svg'
 import home from '../assets/images/svg/home.svg'
-import Navbar from './component/Navbar';
+// import Navbar from './component/Navbar';
 
 function Main() {
     AOS.init();
@@ -42,36 +43,27 @@ function Main() {
         }
     }
 
-    useEffect(() => {
-        if(Opened !== true) {
-            return navigate(`/${slug_url.name}`);
-        }
-
-        // onClick of first interaction on page before I need the sounds
-        playMusic.play();
-
-        // later on when you actually want to play a sound at any point without user interaction
-        playMusic.src = Backsound;
-        playMusic.play();
-    }, [playMusic]);
-
     useLayoutEffect(() => {
         if(Opened !== true) {
             return navigate(`/${slug_url.name}`);
         }
-        // onClick of first interaction on page before I need the sounds
         playMusic.play();
+    }, [playMusic]);
 
-        // later on when you actually want to play a sound at any point without user interaction
-        playMusic.src = Backsound;
+    useEffect(() => {
+        if(Opened !== true) {
+            return navigate(`/${slug_url.name}`);
+        }
         playMusic.play();
     }, [playMusic]);
 
     const copyclipboard = (value) => {
-        navigator.clipboard.writeText(value);
+        copy(value, {
+            debug: true,
+            message: 'Press #{key} to copy',
+          });
 
-        alert(`Success copied ${value}`);
-        return false;
+        alert('Successfully copied the text');
     }
 
     return (
@@ -87,11 +79,11 @@ function Main() {
                 <CountdownPage /> 
                 <Guestbook />
                 <Footer />
-                <Navbar />
+                {/* <Navbar /> */}
             </div>
             <div className='fixed-bottom text-center mx-auto'>
-                <button className='btn btn-default' onClick={playAndPause}><i className={`fas ${isPlay ? 'fa-play' : 'fa-pause'}`}></i></button>
-                <button className='btn btn-default' data-toggle="modal" data-target="#kirimHadiah"><i className="fas fa-gift"></i> Kirim Hadiah</button>
+                <button className='btn btn-slide-pink' onClick={playAndPause}><i className={`fas ${isPlay ? 'fa-play' : 'fa-pause'}`}></i></button>
+                <button className='btn btn-slide-pink' data-toggle="modal" data-target="#kirimHadiah"><i className="fas fa-gift"></i> Kirim Hadiah</button>
             </div>
             <Helmet>      
                 <script src="assets/js/main.js"></script>
@@ -153,7 +145,7 @@ function Main() {
                                     <img src={home} className='rekening-logo' />
                                 </div>
                                 <div className='col-9'>
-                                    Jl Man 6, RT.04/07, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550
+                                    <span className='select' onClick={ () => copyclipboard("Jl Man 6, RT.04/07, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550") } >Jl Man 6, RT.04/07, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550 <i className="fa-solid fa-clone"></i></span> 
                                 </div>
                             </div>
                             

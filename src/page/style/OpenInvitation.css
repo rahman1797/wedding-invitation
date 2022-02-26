@@ -54,14 +54,14 @@
   filter: invert();
 }
 
-.btn{
+.btn-slide-pink{
   background: linear-gradient(90deg, rgba(241,78,149,255) 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
   border: none;
 }
-.btn:hover {
+.btn-slide-pink:hover {
     background-position: left bottom;
     color: white;
 }

@@ -143,7 +143,7 @@ export default function Guestbook() {
                   <i className="fa-solid fa-check"></i>
                 </span>
                 <select className='form-control form-borderless' value={kehadiran} onChange={ e => setKehadiran(e.target.value) } required>
-                  <option value={''} disabled hidden>Kehadiran</option>
+                  <option value={''} disabled hidden>Konfirmasi kehadiran.....</option>
                   <option value={'Hadir'}>Hadir</option>
                   <option value={'Tidak Hadir'}>Tidak Hadir</option>
                   <option value={'Masih Ragu'}>Masih Ragu</option>
@@ -155,7 +155,7 @@ export default function Guestbook() {
                 </span>
                 <textarea className="form-control form-borderless" rows={5} placeholder="Pesan......" required value={ pesan } onChange={ e => setPesan(e.target.value) } />
               </div>
-              <button className='btn btn-success' type='submit'><i className="fa-solid fa-paper-plane"></i> Send</button>
+              <button className='btn btn-default float-right' type='submit'><i className="fa-solid fa-paper-plane"></i> Send</button>
             </form>
           </div>
         </div>
