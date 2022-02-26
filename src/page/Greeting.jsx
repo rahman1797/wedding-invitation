@@ -5,7 +5,6 @@ import Evita from '../assets/images/face_evita_framing.png'
 import Rahman from '../assets/images/face_rahman_framing.png'
 import Instagram from '../assets/images/svg/instagram.svg'
 import Frame1 from '../assets/images/frame-1.png'
-// import round_frame from '../assets/images/round-frame.png'
 
 export default class Greeting extends Component {
     
@@ -20,7 +19,7 @@ export default class Greeting extends Component {
             </div>
             <Covid />
             <div id="greeting">
-                <div className="container mt-5">
+                <div className="container mt-5" id='section-greeting'>
                     <div className="row">
                         <div className="col-md-12 text-center animate-box">
                             <img className='frame mb-4' src={Frame1} alt="" />
@@ -28,7 +27,7 @@ export default class Greeting extends Component {
                             <div className='text-center'>
                                 <p style={{ fontSize: '16px' }}><i>Assalamu’alaikum Warahmatullahi Wabarakatuh</i></p>
                                 <p className='mt-4 p-5' style={{ fontSize: '16px' }}>Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.
-                                    Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
+                                Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
                             </div>
                         </div>
                     </div>
@@ -36,7 +35,6 @@ export default class Greeting extends Component {
                     <div className="couple-wrap animate-box">
                         <div className="couple-half my-4">
                             <div className="groom">
-                                {/* <img src={round_frame} className='round-frame float-right' alt='' /> */}
                                 <img src={Evita} alt="bride" className="img-responsive" />
                             </div>
                             <div className="desc-groom">

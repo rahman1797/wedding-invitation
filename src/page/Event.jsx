@@ -18,7 +18,7 @@ function Event() {
             <img className='top-frame' src={TopFrame} alt='' />
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12 text-center section-heading animate-box">
+                    <div className="col-md-12 text-center section-heading" data-aos='fade-up'>
                         <img className='frame mb-4 event' src={Frame1} alt="" />
                         <h2 className='playball heading-color-background'>Wedding Events</h2>
                     </div>
@@ -28,7 +28,7 @@ function Event() {
                         <div className="display-tc">
                             <div className="col-md-12">
                                 <div className="col-md-6 col-sm-6 text-center">
-                                    <div className="event-wrap animate-box">
+                                    <div className="event-wrap" data-aos='fade-left'>
                                         <h3>Main Ceremony <br />(<small className='text-light'>Akad Nikah</small>)</h3>
                                         <div className="event-col">
                                             <i className="icon-clock"></i>
@@ -47,7 +47,7 @@ function Event() {
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-sm-6 text-center">
-                                    <div className="event-wrap animate-box">
+                                    <div className="event-wrap" data-aos='fade-right'>
                                         <h3>Wedding Party<br />(<small className='text-light'>Resepsi</small>)</h3>
                                         <div className="event-col">
                                             <i className="icon-clock"></i>

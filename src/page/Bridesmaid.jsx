@@ -50,7 +50,7 @@ export default class Bridesmaid extends Component {
     };
 
     return (
-        <div className='row'>
+        <div className='row' id='section-bridesmaid'>
             <div className="col-md-12 text-center section-heading animate-box">
                 <img className='frame mb-4' src={Frame1} alt="" />
                 <h1 className='playball heading-white-background'>Our Bridesmaid</h1>

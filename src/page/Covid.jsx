@@ -10,19 +10,19 @@ function Covid() {
       <h3 className='playball h3-covid'>Protokol Covid-19</h3>
       <div className='row p-5'>
         <p className='covid-desc'>Dalam upaya mengurangi penyebaran Covid 19 pada masa pandemi, kami mengharapkan para tamu undangan tetap menjalankan protokol kesehatan yang berlaku.</p>
-        <div className='col-md-3 col-6'>
+        <div className='col-md-3 col-6' data-aos='fade-up'>
           <img className='covid-img mb-2' src={PakaiMasker} />
           <p className='covid-desc'>Wajib Menggunakan Masker</p>
         </div>
-        <div className='col-md-3 col-6'>
+        <div className='col-md-3 col-6' data-aos='fade-up'>
           <img className='covid-img mb-2' src={SocialDistancing} />
           <p className='covid-desc'>Social Distancing</p>
         </div>
-        <div className='col-md-3 col-6'>
+        <div className='col-md-3 col-6' data-aos='fade-up'>
           <img className='covid-img mb-2' src={Namaste} />
           <p className='covid-desc'>Hindari Sentuhan, Gunakan Salam Namaste</p>
         </div>
-        <div className='col-md-3 col-6'>
+        <div className='col-md-3 col-6' data-aos='fade-up'>
           <img className='covid-img mb-2' src={WashingHand} />
           <p className='covid-desc'>Cuci Tangan & Gunakan Hand Sanitizer</p>
         </div>

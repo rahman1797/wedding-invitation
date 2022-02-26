@@ -17,7 +17,7 @@ function Ourstory() {
             <div className="wave"></div>
             <div className="wave"></div>
         </div>
-        <div className='ourstory-banner'>
+        <div className='ourstory-banner' id='section-ourstory'>
             <div id="couple-story">
             <div className="container">
                 <div className="row">

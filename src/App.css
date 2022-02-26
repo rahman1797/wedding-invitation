@@ -172,6 +172,10 @@ h3.bried-groom {
     margin: auto;
 }
 
+.modal-body.madurai {
+  text-align: left;
+}
+
 .playball{
     font-family: Playball, cursive;
     text-align: center;
@@ -383,11 +387,42 @@ select:required:invalid {
   }
 }
 
-/* @media (max-width: 480px) {
-  .css-1o906pp {
-      height: 100px;
-      width: 80px;
-      margin-bottom: 75px;
-  }
-} */
+body {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
 
+.modal-header {
+  border-bottom: none;
+}
+
+.rekening-logo {
+  width: 9rem;
+}
+
+.gift-logo{
+  width: 35%;
+  margin-bottom: 30px;
+}
+
+/* .select{
+  font-size: 18px;
+} */
+.modal-content {
+  background-color: rgba(255, 223, 223, 0.438);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 30px;
+}
+.select:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgb(255, 109, 199);
+}
+
+.btn-shadow {
+  box-shadow: 0.5px 0.5px 8px rgba(255, 0, 179, 0.411);
+}

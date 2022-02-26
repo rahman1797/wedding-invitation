@@ -33,7 +33,7 @@ function OpenInvitation() {
             <div className="container m-auto">
                 <div className="row">
                     <div className="col-md-8 mx-auto col-md-offset-2 text-center">
-                        <div className="animate-box" data-animate-effect="fadeIn">
+                        <div data-aos="flip-left" data-aos-duration="1500">
                             <div className='row'>
                                 <div className='col-12'>
                                     <img className='img-logo' src={icon} alt='love-1' />

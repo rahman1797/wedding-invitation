@@ -19,7 +19,7 @@ function Header() {
 				<div className="row">
 					<div className="col-md-10 mx-auto col-md-offset-2 text-center">
 						<div className="display-t">
-							<div className="display-tc animate-box" >
+							<div className="display-tc" data-aos="fade-up">
 								<h1 className='playball'>Evita & Rahman</h1>
 								<h2>We're getting marriage</h2>
 								<div className='col-12 mt-3 greeting blur-background mx-auto'>
