@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 //Page
@@ -20,12 +20,12 @@ import mandiri from '../assets/images/svg/mandiri.svg'
 import cimb from '../assets/images/svg/cimb.svg'
 import gift from '../assets/images/svg/gift.svg'
 import home from '../assets/images/svg/home.svg'
-// import Navbar from './component/Navbar';
 
 function Main() {
     AOS.init();
 
-    const [playMusic] = useState(new Audio(Backsound));
+    let audio = useRef();
+
     const [isPlay, setIsPlay] = useState(false);
 
     let Opened = useSelector((state) => state.openedInvitation);
@@ -33,29 +33,41 @@ function Main() {
     let navigate = useNavigate();
 
     const playAndPause = () => {
+        
         setIsPlay(!isPlay);
         
         if(isPlay){
-            playMusic.play();
+            audio.current.play();
         }
         else {
-            playMusic.pause();
+            audio.current.pause();
         }
     }
+
+    // start the audio (using the .current property of the ref we just created) when the component mounts using the useEffect hook
+    useEffect(() => {
+        if(Opened !== true) {
+            return navigate(`/${slug_url.name}`);
+        }
+        // audio.current = new Audio(Backsound)
+        // audio.current.play()
+    }, [])
 
     useLayoutEffect(() => {
         if(Opened !== true) {
             return navigate(`/${slug_url.name}`);
         }
-        playMusic.play();
-    }, [playMusic]);
-
-    useEffect(() => {
-        if(Opened !== true) {
-            return navigate(`/${slug_url.name}`);
+        audio.current = new Audio(Backsound)
+        audio.current.play()
+    }, [])
+    // Stop the audio when the component unmounts
+    useLayoutEffect(() => {
+        if(Opened === true) {
+            return () => {
+                audio.current.pause()
+            }
         }
-        playMusic.play();
-    }, [playMusic]);
+    }, [])
 
     const copyclipboard = (value) => {
         copy(value, {
@@ -69,7 +81,6 @@ function Main() {
     return (
         <>        
             <div id='page'>       
-                {/* <Navbar /> */}
                 <Header />
                 <Greeting />
                 <Event />
@@ -79,7 +90,6 @@ function Main() {
                 <CountdownPage /> 
                 <Guestbook />
                 <Footer />
-                {/* <Navbar /> */}
             </div>
             <div className='fixed-bottom text-center mx-auto'>
                 <button className='btn btn-slide-pink' onClick={playAndPause}><i className={`fas ${isPlay ? 'fa-play' : 'fa-pause'}`}></i></button>

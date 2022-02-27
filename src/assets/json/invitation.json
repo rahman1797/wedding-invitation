@@ -594,12 +594,6 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Bpk-Agung-dan-Istri",
-        "nama": "Bpk. Agung & Istri",
-        "is_vip": "0",
-        "sesi": "1"
-    },
-    {
         "slug_url": "Bpk-Wendy-dan-Istri",
         "nama": "Bpk. Wendy & Istri",
         "is_vip": "0",
@@ -954,12 +948,6 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Bpk-Eko-dan-Istri",
-        "nama": "Bpk. Eko & Istri",
-        "is_vip": "0",
-        "sesi": "1"
-    },
-    {
         "slug_url": "Bpk-Bengki-dan-Istri",
         "nama": "Bpk. Bengki & Istri",
         "is_vip": "0",
@@ -1202,12 +1190,6 @@
     {
         "slug_url": "Bpk-Ide-Juang-dan-Istri",
         "nama": "Bpk. Ide Juang & Istri",
-        "is_vip": "0",
-        "sesi": "1"
-    },
-    {
-        "slug_url": "Bpk-Irawan-dan-Istri",
-        "nama": "Bpk. Irawan & Istri",
         "is_vip": "0",
         "sesi": "1"
     },
@@ -1656,12 +1638,6 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Aulia-dan-Partner",
-        "nama": "Aulia & Partner",
-        "is_vip": "0",
-        "sesi": "1"
-    },
-    {
         "slug_url": "Suci-dan-Partner",
         "nama": "Suci & Partner",
         "is_vip": "0",
@@ -1712,12 +1688,6 @@
     {
         "slug_url": "Savira-dan-Partner",
         "nama": "Savira & Partner",
-        "is_vip": "0",
-        "sesi": "1"
-    },
-    {
-        "slug_url": "Panji-dan-Istri",
-        "nama": "Panji & Istri",
         "is_vip": "0",
         "sesi": "1"
     },
@@ -1988,12 +1958,6 @@
     {
         "slug_url": "Bpk-Sito-dan-Istri",
         "nama": "Bpk. Sito & Istri",
-        "is_vip": "0",
-        "sesi": "1"
-    },
-    {
-        "slug_url": "Iis-dan-Suami",
-        "nama": "Iis & Suami",
         "is_vip": "0",
         "sesi": "1"
     },
@@ -2292,12 +2256,6 @@
         "sesi": "2"
     },
     {
-        "slug_url": "Ginda-dan-Istri",
-        "nama": "Ginda & Istri",
-        "is_vip": "0",
-        "sesi": "2"
-    },
-    {
         "slug_url": "Pak-Tri-dan-Istri",
         "nama": "Pak Tri & Istri",
         "is_vip": "0",
@@ -2340,12 +2298,6 @@
         "sesi": "2"
     },
     {
-        "slug_url": "Bpk-Slamet-dan-Istri",
-        "nama": "Bpk Slamet & Istri",
-        "is_vip": "0",
-        "sesi": "2"
-    },
-    {
         "slug_url": "Bpk-Asep-dan-Istri",
         "nama": "Bpk. Asep & Istri",
         "is_vip": "0",
@@ -2372,12 +2324,6 @@
     {
         "slug_url": "Opung-dan-Keluarga",
         "nama": "Opung & Keluarga ",
-        "is_vip": "0",
-        "sesi": "2"
-    },
-    {
-        "slug_url": "Maria-dan-Suami",
-        "nama": "Maria & Suami",
         "is_vip": "0",
         "sesi": "2"
     },
@@ -2576,12 +2522,6 @@
     {
         "slug_url": "Ghina-dan-Partner",
         "nama": "Ghina & Partner",
-        "is_vip": "0",
-        "sesi": "2"
-    },
-    {
-        "slug_url": "Rini-dan-Partner",
-        "nama": "Rini & Partner",
         "is_vip": "0",
         "sesi": "2"
     },
@@ -2988,9 +2928,39 @@
         "sesi": "2"
     },
     {
+        "slug_url": "lia-dan-suami",
+        "nama": "Lia & Suami",
+        "is_vip": "0",
+        "sesi": "2"
+    },
+    {
         "slug_url": "test",
         "nama": "test data dummy",
         "is_vip": "1",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "stephanie-dan-partner",
+        "nama": "Mr. Xia Sam & Stephanie",
+        "is_vip": "1",
+        "sesi": "2"
+    },
+    {
+        "slug_url": "sejarah-a",
+        "nama": "Keluarga Besar Pendidikan Sejarah A",
+        "is_vip": "0",
+        "sesi": "2"
+    },
+    {
+        "slug_url": "sdn-05",
+        "nama": "Keluarga Besar SDN 05",
+        "is_vip": "0",
+        "sesi": "2"
+    },
+    {
+        "slug_url": "ilkom-2015",
+        "nama": "Keluarga Besar Ilmu Komputer 2015",
+        "is_vip": "0",
         "sesi": "2"
     }
 ]

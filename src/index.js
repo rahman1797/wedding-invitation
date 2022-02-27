@@ -12,9 +12,7 @@ ReactDOM.render(
   <SimpleReactLightbox>
   <Provider store={storeRedux}>
     <Router>
-      
         <App />
-      
     </Router>
   </Provider>
   </SimpleReactLightbox>,

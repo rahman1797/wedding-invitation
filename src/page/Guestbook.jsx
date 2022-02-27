@@ -16,10 +16,6 @@ export default function Guestbook() {
 
   const messagesEndRef = useRef(null);
 
-  const AutoScroll = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  }
-
   //Ambil data dari parameter name di url dan mengambil data dari state redux + memfilter berdasarkan slug URL
   let slug_url = useParams();
 	const data = useSelector((state) => state.data.find(obj => (slug_url.name) ? obj.slug_url === slug_url.name : null));
@@ -93,10 +89,9 @@ export default function Guestbook() {
 
     Service.create(data)
       .then(() => {
-        console.log("Created new item successfully!");
         const newMessage = {id, date, ...value};
 
-        setMessage([...message, newMessage]);
+        setMessage([...message, newMessage.reverse()]);
         Swal.fire({
           icon: 'success',
           title: 'Yay...',
@@ -110,13 +105,7 @@ export default function Guestbook() {
 
   useEffect(() => {
     getData();
-    // AutoScroll();
   }, []);
-
-  // window.setInterval(function() {
-  //   var elem = document.getElementById('guest-book');
-  //   elem.scrollTop = elem.scrollHeight;
-  // }, 15000);
 
   return (
     <div className='container' id='section-guestbook'>
