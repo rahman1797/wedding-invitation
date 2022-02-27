@@ -624,7 +624,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Bu Eva",
+        "slug_url": "Bu-Eva",
         "nama": "Bu Eva",
         "is_vip": "0",
         "sesi": "1"
@@ -888,7 +888,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Bpk- Ade-dan-Istri",
+        "slug_url": "Bpk-Ade-dan-Istri",
         "nama": "Bpk. Ade & Istri",
         "is_vip": "0",
         "sesi": "1"
@@ -1080,7 +1080,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Ibu Bali-dan-Suami",
+        "slug_url": "Ibu-Bali-dan-Suami",
         "nama": "Ibu Bali & Suami",
         "is_vip": "0",
         "sesi": "1"
@@ -1148,6 +1148,12 @@
     {
         "slug_url": "Bpk-Eko-Purba-dan-Istri",
         "nama": "Bpk. Eko Purba & Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "Bpk-irawan",
+        "nama": "Bpk. Irawan & Istri",
         "is_vip": "0",
         "sesi": "1"
     },
@@ -1286,6 +1292,12 @@
     {
         "slug_url": "Keluarga-Besar-Mang-Agus",
         "nama": "Keluarga Besar Mang Agus",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "Keluarga-Besar-Mang-saa",
+        "nama": "Keluarga Besar Mang Sa'a",
         "is_vip": "0",
         "sesi": "1"
     },
@@ -1452,7 +1464,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "H.-Sudarmo",
+        "slug_url": "H-Sudarmo",
         "nama": "H. Sudarmo",
         "is_vip": "0",
         "sesi": "1"
@@ -1710,7 +1722,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Satria & Partner",
+        "slug_url": "Satria-dan-Partner",
         "nama": "Satria & Partner",
         "is_vip": "0",
         "sesi": "1"
@@ -1797,7 +1809,7 @@
         "slug_url": "Santina",
         "nama": "Santina",
         "is_vip": "0",
-        "sesi": "1"
+        "sesi": "2"
     },
     {
         "slug_url": "Putri-Bridesmaid",
@@ -1878,7 +1890,7 @@
         "sesi": "2"
     },
     {
-        "slug_url": "Bpk.Cecep-dan-Istri",
+        "slug_url": "Bpk-Cecep-dan-Istri",
         "nama": "Bpk.Cecep & Istri",
         "is_vip": "0",
         "sesi": "1"
@@ -1902,7 +1914,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Kel.-Besar-Engkong-A-Rohman",
+        "slug_url": "Kel-Besar-Engkong-A-Rohman",
         "nama": "Kel.Besar Engkong A Rohman",
         "is_vip": "0",
         "sesi": "1"
@@ -1944,7 +1956,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Ibu Fitri-dan-Suami",
+        "slug_url": "Ibu-Fitri-dan-Suami",
         "nama": "Ibu Fitri & Suami",
         "is_vip": "0",
         "sesi": "1"
@@ -1968,7 +1980,7 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Ibu Asmanah-dan-Suami",
+        "slug_url": "Ibu-Asmanah-dan-Suami",
         "nama": "Ibu Asmanah & Suami",
         "is_vip": "0",
         "sesi": "1"
@@ -2463,6 +2475,12 @@
         "slug_url": "Panji-dan-Istri",
         "nama": "Panji & Istri",
         "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "Panji-G-dan-Istri",
+        "nama": "Panji & Istri",
+        "is_vip": "0",
         "sesi": "2"
     },
     {
@@ -2842,6 +2860,12 @@
         "nama": "Aulia & Partner",
         "is_vip": "0",
         "sesi": "2"
+    },
+    {
+        "slug_url": "Aulia-khi",
+        "nama": "Aulia & Partner",
+        "is_vip": "0",
+        "sesi": "1"
     },
     {
         "slug_url": "Widya-Ayu",

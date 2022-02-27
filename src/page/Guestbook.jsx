@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Frame1 from '../assets/images/frame-1.png'
 
@@ -14,7 +14,7 @@ import Service from '../services/Service';
 
 export default function Guestbook() {
 
-  const messagesEndRef = useRef(null);
+  // const messagesEndRef = useRef(null);
 
   //Ambil data dari parameter name di url dan mengambil data dari state redux + memfilter berdasarkan slug URL
   let slug_url = useParams();
@@ -31,14 +31,15 @@ export default function Guestbook() {
   //Mendapatkan data dari firebase
   const getData = () => {
     const db = getDatabase();
-    const starCountRef = ref(db, '/messages');
+    const docRef = ref(db, '/messages');
     
-    onValue(starCountRef, (snapshot) => {
+    onValue(docRef, (snapshot) => {
       const data = snapshot.val();
-      const value = Object.values(data);
-      setMessage(...message, value.reverse());
+      if(data !== null){
+        const value = Object.values(data);
+        setMessage(...message, value.reverse());
+      }
     });
-
   }
 
   const handleSubmit = (event) => {
