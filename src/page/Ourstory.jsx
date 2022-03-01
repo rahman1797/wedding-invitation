@@ -69,11 +69,11 @@ function Ourstory() {
                                 <div className="timeline-badge" style={{backgroundImage: `url(${Married})`}}></div>
                                 <div className="timeline-panel">
                                     <div className="timeline-heading">
-                                        <h3 className="timeline-title font-weight-bolder">Married</h3>
+                                        <h3 className="timeline-title font-weight-bolder">Marriage</h3>
                                         <span className="date">2022</span>
                                     </div>
                                     <div className="timeline-body">
-                                        <p className='story-desc'>Finally, kami dipersatukan dalam ikatan pernikahan. The best moment ever, and this is the time we were waiting!</p>
+                                        <p className='story-desc'>Finally, kami dipersatukan dalam ikatan pernikahan. The best moment ever, and this is the time we're waiting!</p>
                                     </div>
                                 </div>
                             </li>

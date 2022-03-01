@@ -93,7 +93,7 @@ function Main() {
             </div>
             <div className='fixed-bottom text-center mx-auto'>
                 <button className='btn btn-slide-pink' onClick={playAndPause}><i className={`fas ${isPlay ? 'fa-play' : 'fa-pause'}`}></i></button>
-                <button className='btn btn-slide-pink' data-toggle="modal" data-target="#kirimHadiah"><i className="fas fa-gift"></i> Kirim Hadiah</button>
+                <button className='btn btn-slide-pink' data-toggle="modal" data-target="#kirimHadiah"><i className="fas fa-gift"></i> Wedding Gift</button>
             </div>
             <Helmet>      
                 <script src="assets/js/main.js"></script>

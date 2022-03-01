@@ -11,7 +11,7 @@ import Pink2 from '../assets/images/prewedding/pink2.jpg'
 //thumbnails
 import ThumbJawa1 from '../assets/images/prewedding/thumb-jawa1.jpg'
 import ThumbJawa2 from '../assets/images/prewedding/thumb-jawa2.jpg'
-import ThumbKuning1 from '../assets/images/prewedding/thumb-kuning1.jpg'
+import ThumbKuning1 from '../assets/images/prewedding/kuning1.jpg'
 import ThumbKuning2 from '../assets/images/prewedding/thumb-kuning2.jpg'
 import ThumbPink1 from '../assets/images/prewedding/thumb-pink1.jpg'
 import ThumbPink2 from '../assets/images/prewedding/thumb-pink2.jpg'
