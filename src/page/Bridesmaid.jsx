@@ -22,7 +22,7 @@ export default class Bridesmaid extends Component {
         autoplay: true,
         autoplayTimeout: 2800,
         items: 1,
-        autoplayHoverPause: false,
+        autoplayHoverPause: true,
         // stagePadding :20,
         center: true,
         nav: false,

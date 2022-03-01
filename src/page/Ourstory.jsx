@@ -49,7 +49,7 @@ function Ourstory() {
                                         <span className="date">2015</span>
                                     </div>
                                     <div className="timeline-body">
-                                        <p className='story-desc'>Tepat tanggal 11 Januari 2015, Rahman menyatakan perasaannya kepada Evita dengan membawa seikat bunga mawar dan sebuah boneka</p>
+                                        <p className='story-desc'>Tepat tanggal 11 Januari 2015, Rahman menyatakan perasaannya kepada Evita dengan membawa seikat bunga mawar dan sebuah boneka.</p>
                                     </div>
                                 </div>
                             </li>

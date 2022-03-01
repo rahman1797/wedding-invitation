@@ -296,14 +296,24 @@ p.story-desc {
     }
 }
 
-#guest-book {
+.card-guestbook {
   height: 500px;
   padding: 1.5rem;
   background-color: rgb(255, 230, 234);
   border-radius: 15px;
   border: 1.5px solid rgb(255, 164, 179);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   padding-right: 17px;
+}
+
+#guest-book {
+  /* height: 500px;
+  padding: 1.5rem;
+  background-color: rgb(255, 230, 234);
+  border-radius: 15px;
+  border: 1.5px solid rgb(255, 164, 179); */
+  overflow-y: scroll;
+  /* padding-right: 17px; */
 }
 
 #guest-book::-webkit-scrollbar {

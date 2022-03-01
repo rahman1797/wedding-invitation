@@ -150,11 +150,13 @@ export default function Guestbook() {
           </div>
         </div>
         <div className='col-md-6'>
-          <div className='card' id='guest-book'>
-            <div className='p-3'>
+          
+          <div className='card card-guestbook'>
+          <h4 class="text-center card-title"><i class="fa-solid fa-heart"></i> { message.length } Wishes</h4>
+            <div className='p-3' id='guest-book'>
             
+              <div className='card-text'>
               { message.length === 0 ? 
-
                 'No message found' : 
                 message.map(obj => 
                   <>
@@ -165,6 +167,8 @@ export default function Guestbook() {
                   </>
                 )
               }
+              </div>
+              
 
             </div>
           </div>

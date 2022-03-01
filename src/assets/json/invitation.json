@@ -2961,7 +2961,25 @@
         "slug_url": "lia-dan-suami",
         "nama": "Lia & Suami",
         "is_vip": "0",
-        "sesi": "2"
+        "sesi": "1"
+    },
+    {
+        "slug_url": "rafika-utami",
+        "nama": "Rafika Utami",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "sella-monika",
+        "nama": "sella-monika",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "lia-dan-suami",
+        "nama": "Lia & Suami",
+        "is_vip": "0",
+        "sesi": "1"
     },
     {
         "slug_url": "test",
