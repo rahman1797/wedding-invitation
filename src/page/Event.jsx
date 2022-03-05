@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../assets/images/image1.jpg'
+import Background from '../assets/images/event_background.jpg'
 import Frame1 from '../assets/images/frame-1.png'
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";

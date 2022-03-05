@@ -53,6 +53,7 @@ function Main() {
         // audio.current.play()
     }, [])
 
+    //For apple device
     useLayoutEffect(() => {
         if(Opened !== true) {
             return navigate(`/${slug_url.name}`);
@@ -105,13 +106,15 @@ function Main() {
                 <div className="modal-content">
                     <div className="modal-header">
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"><i className="text-light fa-solid fa-circle-chevron-up"></i></span>
                         </button>
                     </div>
                     <div className="modal-body d-flex madurai">
                         <div className='row'>
                             <img src={gift} className="mx-auto gift-logo" />
-                            
+                            <div className='col-12 text-center mb-2'>
+                                Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami, dapat melalui :
+                            </div>
                             <div className='d-flex p-3'>
                                 <div className='col-md-3 col-4 my-auto'>
                                     <img src={mandiri} className='rekening-logo' />
@@ -155,10 +158,12 @@ function Main() {
                                     <img src={home} className='rekening-logo' />
                                 </div>
                                 <div className='col-9'>
-                                    <span className='select' onClick={ () => copyclipboard("Jl Man 6, RT.04/07, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550") } >Jl Man 6, RT.04/07, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550 <i className="fa-solid fa-clone"></i></span> 
+                                    <span className='select' onClick={ () => copyclipboard("Jl Man 6, RT.07/04, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550") } >Jl Man 6, RT.07/04, No.51E, Kel.Dukuh, Kec.Kramatjati, Jakarta Timur, 13550 <i className="fa-solid fa-clone"></i></span> 
                                 </div>
                             </div>
-                            
+                            <div className='col-12 text-center mt-3'>
+                                Terima kasih!
+                            </div>
                         </div>
                     </div>
                 </div>

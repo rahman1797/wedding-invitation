@@ -10,6 +10,8 @@ import { v4 as uuidv4 } from 'uuid';
 import Moment from 'react-moment';
 import { getDatabase, ref, onValue} from "firebase/database";
 
+import loading from '../assets/images/svg/loading.svg'
+
 import Service from '../services/Service';
 
 export default function Guestbook() {
@@ -24,6 +26,8 @@ export default function Guestbook() {
   const [nama, setNama] = useState(data.nama);
   const [kehadiran, setKehadiran] = useState('');
   const [pesan, setPesan] = useState('');
+
+  const [sending, setSending] = useState(false);
 
   //State untuk menyimpan list pesan yang dibuat dalam bentuk array
   const [message, setMessage] = useState([]);
@@ -44,6 +48,9 @@ export default function Guestbook() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    setSending(true);
+    
     if(!nama || nama === '') {
       Swal.fire({
         icon: 'error',
@@ -72,7 +79,7 @@ export default function Guestbook() {
     //Reset inputan form
     setKehadiran('');
     setPesan('');
-
+    
     return false;
   }
   
@@ -90,9 +97,12 @@ export default function Guestbook() {
 
     Service.create(data)
       .then(() => {
-        const newMessage = {id, date, ...value};
+        // const newMessage = {id, ...value};
+        // let newArray = [...message, newMessage];
+        // console.log(newArray); 
+        // setMessage(newArray);
+        setSending(false);
 
-        setMessage([...message, newMessage.reverse()]);
         Swal.fire({
           icon: 'success',
           title: 'Yay...',
@@ -145,26 +155,26 @@ export default function Guestbook() {
                 </span>
                 <textarea className="form-control form-borderless" rows={5} placeholder="Pesan......" required value={ pesan } onChange={ e => setPesan(e.target.value) } />
               </div>
-              <button className='btn btn-default float-right' type='submit'><i className="fa-solid fa-paper-plane"></i> Send</button>
+              <button className='btn btn-default float-right' type='submit' disabled={sending}>{ sending ? <img src={loading} id='loading'/> : <i className="fa-solid fa-paper-plane"></i> } { sending ? 'Please wait..' : 'Send' }</button>
             </form>
           </div>
         </div>
         <div className='col-md-6'>
           
           <div className='card card-guestbook'>
-          <h4 class="text-center card-title"><i class="fa-solid fa-heart"></i> { message.length } Wishes</h4>
+          <h4 className="text-center card-title"><i className="fa-solid fa-heart"></i> { message.length } Wishes</h4>
             <div className='p-3' id='guest-book'>
             
               <div className='card-text'>
               { message.length === 0 ? 
                 'No message found' : 
                 message.map(obj => 
-                  <>
+                  <span key={obj.id}>
                     <strong key={obj.id}>{ obj.nama }</strong>
                     <br />
                     <small><Moment format='DD MMM YYYY HH:mm'>{ obj.tanggal }</Moment></small>
                     <p>{ obj.pesan }</p>
-                  </>
+                  </span>
                 )
               }
               </div>

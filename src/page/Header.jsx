@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 import { useParams } from "react-router-dom";
 
-import HeaderImage from '../assets/images/headerimage2.jpg'
+import HeaderImage from '../assets/images/headerimage.jpg'
 
 function Header() {
 

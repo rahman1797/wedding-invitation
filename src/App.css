@@ -113,7 +113,7 @@
 }
 
 .ourstory-banner {
-  background-image: url('/src/assets/images/white-wall-border1.jpg');
+  background-image: url('/src/assets/images/white-wall-border.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -371,7 +371,7 @@ p.story-desc {
 
 footer {
   background-color: black;
-  height: 100px;
+  height: 7em;
   width: 100%;
 }
 
@@ -414,6 +414,8 @@ body::-webkit-scrollbar {
 
 .rekening-logo {
   width: 9rem;
+  /* -webkit-filter: drop-shadow( 1px 1px 1px rgb(255, 255, 255)); */
+  filter: drop-shadow( 0px 0px 4px rgb(255, 255, 255));
 }
 
 .gift-logo{
@@ -425,9 +427,11 @@ body::-webkit-scrollbar {
   font-size: 18px;
 } */
 .modal-content {
-  background-color: rgba(255, 223, 223, 0.438);
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(48, 47, 47, 0.377);
   color: rgb(255, 255, 255);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(30px);
+  border: 1px solid gold;
   -webkit-backdrop-filter: blur(15px);
   border-radius: 30px;
 }
@@ -447,4 +451,9 @@ body::-webkit-scrollbar {
 
 .notfound-img {
   width: 300px;
+}
+
+#loading {
+  width: 20px;
+  height: 20px;
 }

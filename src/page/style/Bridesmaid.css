@@ -2,17 +2,18 @@
     transition: all 0.3s ease-in-out
 }
 
-/* .owl-carousel .owl-item .card {
-    padding: 0px;
-    position: relative
-} */
+.bridesmaid-heading {
+    margin-bottom: 2.5rem;
+}
 
 .owl-carousel .owl-stage-outer {
     overflow-y: auto !important;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    padding-top: 12px;
 }
 
 .owl-carousel .owl-item img {
+    box-shadow: 1px 0px 12px rgb(255, 112, 112);
     height: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -34,7 +35,7 @@
     color: #fdfdfd;
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(255, 182, 227);
+    background-color: rgb(255,165,165);
     padding: 0.5rem 1.2rem;
     border-radius: 15px;
 }
@@ -78,15 +79,3 @@
     margin-left: 10px;
     margin-right: 5px;
 }
-
-/* @media(min-width: 480.6px) and (max-width: 575.5px) {
-    .owl-carousel .owl-item .card .name {
-        left: 24%
-    }
-}
-
-@media(max-width: 360px) {
-    .owl-carousel .owl-item .card .name {
-        left: 30%
-    }
-} */
