@@ -92,7 +92,7 @@
 /* END WAVE */
 .card-countdown {
   border-radius: 15px;
-  height: 10em;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   padding: 10px 40px;

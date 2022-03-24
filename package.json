@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "copy-to-clipboard": "^3.3.1",
-    "firebase": "^9.6.7",
+    "firebase": "^9.6.8",
     "jquery": "^3.6.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "react": "^17.0.2",

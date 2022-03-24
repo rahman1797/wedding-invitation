@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from "react-redux";
 
 import { useParams } from "react-router-dom";
+
+import Swal from "sweetalert2"
 
 import HeaderImage from '../assets/images/headerimage.jpg'
 
@@ -11,6 +13,17 @@ function Header() {
 	//useSelector = untuk mendapatkan state dari redux
 	let slug_url = useParams();
 	const data = useSelector((state) => state.data.find(obj => (slug_url.name) ? obj.slug_url === slug_url.name : null));
+
+	useEffect(() => {
+		if(data.is_vip === "1"){
+			Swal.fire({
+				icon: 'warning',
+				title: 'Kepada Yth, Bapak/Ibu/Saudara/i',
+				html: `<h3>${data.nama}</h3> <br/><strong>Khusus tamu VIP harap menunjukkan undangan fisik/digital kepada penerima tamu. Terima kasih</strong>`
+			  });
+		}
+		
+	  }, []);
 		
 	return (
 		<header id="home" className="section-cover" role="banner" style={{ backgroundImage: `url(${HeaderImage})`  }}>
@@ -29,6 +42,8 @@ function Header() {
 									<strong className='greeting'>{ data.nama }</strong> <br />
 									di {data.is_vip === '0' ? 'Tempat' : 'VIP' }
 								</div>
+								{data.is_vip === '0' ? null : <small className='text-light'>*Khusus tamu VIP harap menunjukkan undangan fisik/digital kepada penerima tamu. Terima kasih</small> }
+
 							</div>
 						</div>
 					</div>

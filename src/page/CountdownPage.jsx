@@ -10,7 +10,7 @@ function CountdownPage() {
     let slug_url = useParams();
     const data = useSelector((state) => state.data.find(obj => (slug_url.name) ? obj.slug_url === slug_url.name : null));
   
-    const Completionist = () => <span>You are good to go!</span>;
+    const Completionist = () => <span>This event has been completed. Thank you to all the attendees who have visited and ask for prayers for our lives in the future</span>;
 
     // Renderer callback with condition
     const renderer = ({ days, hours, minutes, seconds, completed }) => {

@@ -1422,8 +1422,8 @@
         "sesi": "1"
     },
     {
-        "slug_url": "Hj-Titi",
-        "nama": "Hj. Titi",
+        "slug_url": "sonia",
+        "nama": "Sonia Nanthenny",
         "is_vip": "0",
         "sesi": "1"
     },
@@ -1737,7 +1737,7 @@
         "slug_url": "Rini-dan-Partner",
         "nama": "Rini & Partner",
         "is_vip": "0",
-        "sesi": "1"
+        "sesi": "2"
     },
     {
         "slug_url": "Rahimah-dan-Calon-Suami",
@@ -3090,8 +3090,8 @@
         "sesi": "2"
     },
     {
-        "slug_url": "Adit-Yuliandi",
-        "nama": "Adit Yuliandi",
+        "slug_url": "Aditya-Liviandi",
+        "nama": "Aditya Liviandi",
         "is_vip": "1",
         "sesi": "2"
     },
@@ -3658,5 +3658,174 @@
         "nama": "Nisa & Partner",
         "is_vip": "0",
         "sesi": "2"
+    }
+
+
+
+
+
+
+    ,
+    {
+        "slug_url": "yodi",
+        "nama": "Yodi",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "dicky",
+        "nama": "Dicky & Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "agung-saputro",
+        "nama": "Agung Saputro dan Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "mama-dito",
+        "nama": "Mama Dito dan Klg",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "markus-lius",
+        "nama": "Markus dan Istri (Lius)",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "samsul-adiat",
+        "nama": "Samsul Adiat dan Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "edo-purba",
+        "nama": "Edo Purba",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "ust-m-zein",
+        "nama": "Ustadz M. Zein",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "neneng",
+        "nama": "Bu Neneng",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "diki-dan-istri",
+        "nama": "Diki & Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "luki",
+        "nama": "Luki & istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "arif",
+        "nama": "Mama Arif",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "kos",
+        "nama": "Ibu Kos Rahman",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "amir-salim",
+        "nama": "Amir Salim dan Istri (Bu Mira)",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "aceng-vivi",
+        "nama": "Aceng dan Mbak Vivi",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "yohanna",
+        "nama": "Yohanna",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "mba-ida",
+        "nama": "Mbak Ida",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "mama-salma",
+        "nama": "Mama Salma",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "nurdin",
+        "nama": "Bang Nurdin",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "yani-dan-istri",
+        "nama": "Yani dan Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "dian-dan-istri",
+        "nama": "Dian dan Istri",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "lis",
+        "nama": "Mbak Lis",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "ragil-soekarno",
+        "nama": "Ragil Soekarno dan Istri (Mbak Dewi)",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "poppy",
+        "nama": "Mbak Poppy",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "angga",
+        "nama": "Mama Angga",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "grup-liko",
+        "nama": "Liko (Pengajian Ibu)",
+        "is_vip": "0",
+        "sesi": "1"
+    },
+    {
+        "slug_url": "mama-okta",
+        "nama": "Mama okta (Ibu kos)",
+        "is_vip": "0",
+        "sesi": "1"
     }
 ]

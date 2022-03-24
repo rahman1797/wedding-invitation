@@ -110,6 +110,14 @@ export default function Guestbook() {
         });
       })
       .catch((e) => {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Yay...',
+          text: 'Thank you! but now this feature has been closed / permission to write has been denied'
+        }).then((res) => {
+          setSending(false);
+        });
+        
         console.log(e);
       });
   }
@@ -153,7 +161,7 @@ export default function Guestbook() {
                 <span className='prefix-icon'>
                   <i className="fa-solid fa-comment-dots"></i>
                 </span>
-                <textarea className="form-control form-borderless" rows={5} placeholder="Pesan......" required value={ pesan } onChange={ e => setPesan(e.target.value) } />
+                <textarea className="form-control form-borderless" rows={5} placeholder="Pesan / Ucapan ......" required value={ pesan } onChange={ e => setPesan(e.target.value) } />
               </div>
               <button className='btn btn-default float-right' type='submit' disabled={sending}>{ sending ? <img src={loading} id='loading'/> : <i className="fa-solid fa-paper-plane"></i> } { sending ? 'Please wait..' : 'Send' }</button>
             </form>
